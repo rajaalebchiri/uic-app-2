@@ -1,0 +1,13 @@
+.container{
+    background-image: url(../images/athletes-ball-basketball-945471.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.col{
+    height: 3cm;
+}
+.jumbotron{
+    background-color: white;
+    padding-bottom: 55px;
+    padding-top: 30px;
+}

@@ -1,0 +1,94 @@
+.logo > img {
+    height: 2cm;
+    width: 3.5cm;
+    margin-top: 20px;
+}
+.nav{
+    height: 80px;
+    width: 500px;
+    padding-left: 5px;
+}
+.nav-ul{
+    
+    vertical-align: center;
+    /* align-items: center; */
+    padding-top: 15px;
+}
+body {
+    font-family: Arial;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+  }
+  .split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    width: 45%;
+  }
+  nav{
+      grid-area: nav;
+      background-color: white;
+      top: 0;
+      padding: 0;
+  }
+  .card > h6{
+grid-area: h6;
+  }
+  .card > i{
+      grid-area: i;
+  }
+  .card{
+      grid-area: card;
+      width: 10cm;
+      height: 3cm;
+top: 7px;
+
+  }
+  .h1sports{
+      grid-area: h1sports;
+      writing-mode: vertical-rl;
+      font-size: 90px;
+      margin-right: 35px;
+      margin-left: 0px;}
+  .right {
+      width: 55%;
+    right: 0;
+    background-image: url(../images/action-adult-balance-163452.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    
+    grid-column-gap: 10px;
+    padding: 0;
+    grid-template-areas: '. . . nav'
+                          '. . . h1sports'
+                          '. . . h1sports'
+                          '. . . h1sports'
+                          'card card . h1sports';
+                          
+}
+ 

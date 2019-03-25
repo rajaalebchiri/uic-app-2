@@ -1,0 +1,97 @@
+.programme{
+	margin-left: 97px;
+	margin-right: 97px;
+	margin-top: 80px;
+}
+.color{
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.md-tabs {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    border: 0;
+    padding: .7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -20px;
+    background-color: #2bbbad;
+    z-index: 1;
+    position: relative;
+    -webkit-border-radius: .25rem;
+    border-radius: .25rem;
+}
+
+
+body > div:nth-child(4) > div:nth-child(1) {
+	margin-left: 97px;
+	margin-right: 97px;
+}
+body > div:nth-child(4) > div:nth-child(2) {
+	margin-left: 97px;
+	margin-right: 97px;
+}
+body > div:nth-child(4) > div:nth-child(3) {
+	margin-left: 97px;
+	margin-right: 97px;
+}
+body > div:nth-child(4) > div:nth-child(4) {
+	margin-left: 97px;
+	margin-right: 97px;
+}
+.pink-text{
+	color: white !important;
+}
+.nav-link{
+	color:black !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.navbar-brand > img{
+		margin-left:0 !important;
+	}
+	#navbarSupportedContent-4 > ul{
+		margin-right:0px;
+	}
+	.programme{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+	}
+} 
+@media (min-width: 768px) {
+	.carousel-multi-item-2 .col-md-3 {
+	float: left;
+	width: 25%;
+	max-width: 100%; } 
+
+}
+	
+	.carousel-multi-item-2 .card img {
+	border-radius: 2px; }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 990px) {
+	.navbar-brand > img{
+		margin-left:0 !important;
+	}
+	#navbarSupportedContent-4 > ul{
+		margin-right:0px;
+	}
+	.programme{
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+	}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+
+#navbarSupportedContent-4 > ul{
+	margin-right:97px;
+}
