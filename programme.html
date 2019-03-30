@@ -89,6 +89,16 @@ h3 {
 }
   </style>
   <style>
+    .stepper-vertical li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: -webkit-calc(100% - 40px);
+    height: calc(100% - 40px);
+    left: 50% !important;
+    top: 3.44rem;
+    background-color: rgba(0,0,0,.1);
+}
       body > div.card.card-cascade.wider.reverse > div.view.view-cascade.overlay > div > div > h2{
           margin-top: -1.5rem !important;
       }
@@ -144,7 +154,6 @@ h3 {
 
   </style>
 </head>
-
 <body>
 
     <!--Navbar-->
@@ -156,16 +165,16 @@ h3 {
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
       <ul class="navbar-nav ml-auto" style="margin-right:117px !important;">
         <li class="nav-item " style="background-color: none !important;">
-          <a class="nav-link waves-effect waves-light" href="index.html" >Home</a>
+          <a class="nav-link waves-effect waves-light" href="index.html">Home</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link waves-effect waves-light"  href="about.html">About</a>
+            <a class="nav-link waves-effect waves-light" href="about.html">About</a>
         </li>
         <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="ecoles.html">Participants</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" style="color: #0076b3 !important;font-weight: 700;border-bottom: 3px solid #0076b3;"  href="programme.html">Schedule</a>
+            <a class="nav-link waves-effect waves-light" style="color: #0076b3 !important;font-weight: 700;border-bottom: 3px solid #0076b3;" href="programme.html">Schedule</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
@@ -191,17 +200,14 @@ h3 {
         <!-- Card content -->
         <div class="card-body card-body-cascade text-center">
             <ul class="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="day-1" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md"
-                    aria-selected="true">DAY 1</a>
+                <li class="nav-item waves-effect waves-light">
+                  <a class="nav-link active" id="day-1" data-toggle="tab" href="#home-md" role="tab" aria-controls="home-md" aria-selected="true">DAY 1</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="day-2" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md"
-                    aria-selected="false">DAY 2</a>
+                <li class="nav-item waves-effect waves-light">
+                  <a class="nav-link" id="day-2" data-toggle="tab" href="#profile-md" role="tab" aria-controls="profile-md" aria-selected="false">DAY 2</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="day-3" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md"
-                    aria-selected="false">DAY 3</a>
+                <li class="nav-item waves-effect waves-light">
+                  <a class="nav-link" id="day-3" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md" aria-selected="false">DAY 3</a>
                 </li>
               </ul>
               <div class="tab-content card pt-5" id="myTabContentMD">
@@ -209,23 +215,84 @@ h3 {
                         <div class="row">
                                 <div class="col-1">
                                   <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home"
-                                      role="tab" aria-controls="home">Football</a>
-                                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
-                                      role="tab" aria-controls="profile">Basketball</a>
-                                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
-                                      role="tab" aria-controls="messages">Tennis</a>
-                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                                      role="tab" aria-controls="settings">Volleyball</a>
-                                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                                      role="tab" aria-controls="settings">Ping-Pong</a>
-                                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                                      role="tab" aria-controls="settings">Other</a>
+                                    <a class="list-group-item list-group-item-action active" id="list-football-list" data-toggle="list" href="#list-football" role="tab" aria-controls="football">Football</a>
+                                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Basketball</a>
+                                    <a class="list-group-item list-group-item-action" id="list-tennis-list" data-toggle="list" href="#list-tennis" role="tab" aria-controls="tennis">Tennis</a>
+                                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Volleyball</a>
+                                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Ping-Pong</a>
+                                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Other</a>
                                   </div>
                                 </div>
                                 <div class="col-10">
                                   <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                  <div class="tab-pane fade show active" id="list-football" role="tabpanel" aria-labelledby="list-football-list">
+                                          <section class="p-5">
+                                                  <!-- Timeline -->
+                                                  <div class="row">
+                                                    <div class="col-md-12">
+                                                      <div class="timeline-main">
+                                                        <!-- Timeline Wrapper -->
+                                                        <ul class="stepper stepper-vertical timeline timeline-basic pl-0">
+                                                            <li>
+                                                              <!--Section Title -->
+                                                              <a style="
+    left: 43.5%;
+">                                                              <span class="circle primary-color z-depth-1-half" style="border-radius:0px !important;-webkit-border-radius:0px !important;height:auto;width:auto;">12H30-13H45</span>
+                                                              </a>
+                            
+                                                              <!-- Section Description -->
+                                                              <div class="step-content z-depth-1 ml-2 p-4" style="
+    left: 17% !important;
+    /* margin-left: 1500px; */
+    /* float: right; */
+    position: inherit;
+">
+                                                                <h4 class="font-weight-bold">Participants</h4>
+                                                                <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> Match 1</p>
+                                                                <div class="container">
+                                                                  <div class="row">
+                                                                    <div class="col-md-5">Participant 1</div>
+                                                                    <div class="col-md-2"><span class="badge badge-primary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M139.2,0.24c-11.28,0.36 -23.46,4.335 -35.76,12.48c-1.785,1.2 -2.28,3.615 -1.08,5.4c1.2,1.785 3.615,2.28 5.4,1.08c25.95,-17.19 48.03,-13.89 63.48,1.56c9.45,9.45 14.175,21.39 12.72,35.16c-1.455,13.77 -9.27,29.55 -25.8,46.08c-16.545,16.545 -33.525,25.335 -48.36,27.72c-14.835,2.385 -27.57,-1.41 -36.84,-10.68c-6.6,-6.6 -10.455,-15 -11.28,-24.6c0,-0.12 0,-0.24 0,-0.36c-0.36,-4.56 -0.075,-9.345 0.96,-14.4c0.51,-1.41 0.165,-3 -0.915,-4.05c-1.065,-1.065 -2.655,-1.395 -4.065,-0.855c-1.395,0.54 -2.37,1.845 -2.46,3.345c-1.095,5.31 -1.38,10.485 -1.08,15.48c-0.135,0.465 -0.165,0.96 -0.12,1.44c0.315,3.675 -0.105,12.075 -1.8,20.16c-1.695,8.085 -4.83,16.11 -8.28,19.56l-1.68,1.68c-1.14,-0.465 -2.37,-0.72 -3.6,-0.72c-2.46,0 -4.98,0.9 -6.84,2.76l-28.08,28.08c-2.535,2.535 -2.67,5.985 -1.92,9.12c0.75,3.135 2.595,6.315 5.4,9.12c2.805,2.805 5.985,4.65 9.12,5.4c3.135,0.75 6.585,0.615 9.12,-1.92l28.08,-28.08c2.79,-2.79 3.435,-6.975 2.04,-10.44l1.68,-1.68c3.45,-3.45 11.475,-6.495 19.56,-8.16c8.085,-1.665 16.47,-2.115 20.16,-1.8c0.36,0.015 0.72,-0.03 1.08,-0.12c4.185,0.285 8.52,0.105 12.96,-0.6c16.86,-2.7 35.145,-12.585 52.56,-30c17.415,-17.415 26.265,-34.755 27.96,-50.76c1.695,-16.005 -4.005,-30.405 -14.88,-41.28c-8.895,-8.895 -20.07,-14.25 -32.64,-15c-1.575,-0.09 -3.195,-0.165 -4.8,-0.12zM69.12,3.84c-19.035,0 -34.56,15.525 -34.56,34.56c0,19.035 15.525,34.56 34.56,34.56c19.035,0 34.56,-15.525 34.56,-34.56c0,-19.035 -15.525,-34.56 -34.56,-34.56zM68.4,11.52c0.24,0 0.48,0 0.72,0c14.895,0 26.88,11.985 26.88,26.88c0,0.24 0,0.48 0,0.72c-5.13,-1.455 -11.1,-4.38 -17.16,-10.44c-6.09,-6.09 -8.985,-12.03 -10.44,-17.16zM60.84,12.84c1.71,6.465 5.34,13.98 12.6,21.24c7.245,7.245 14.79,10.98 21.24,12.72c-2.655,8.13 -9.03,14.505 -17.16,17.16c-1.725,-6.465 -5.46,-13.98 -12.72,-21.24c-7.245,-7.245 -14.775,-10.98 -21.24,-12.72c2.655,-8.16 9.105,-14.535 17.28,-17.16zM139.08,16.56c-10.005,0.495 -20.715,4.8 -31.56,12.96c-1.695,1.29 -2.01,3.705 -0.72,5.4c1.29,1.695 3.705,2.01 5.4,0.72c9.96,-7.5 19.215,-10.995 27.24,-11.4c8.025,-0.405 14.865,2.13 20.52,7.8c6.675,6.675 9.165,14.88 7.32,24.84c-1.845,9.96 -8.4,21.735 -20.52,33.84c-12.105,12.12 -24.81,19.68 -35.88,22.44c-11.07,2.76 -20.07,0.915 -26.52,-5.52c-6.255,-6.27 -8.19,-14.91 -5.76,-25.56c0.495,-1.395 0.135,-2.955 -0.9,-4.005c-1.05,-1.035 -2.61,-1.395 -4.005,-0.9c-1.395,0.495 -2.385,1.755 -2.535,3.225c-2.835,12.48 -0.63,24.45 7.68,32.76c8.55,8.55 21.075,10.665 33.96,7.44c12.885,-3.225 26.61,-11.61 39.48,-24.48c12.87,-12.87 20.325,-25.725 22.56,-37.8c2.235,-12.075 -1.155,-23.355 -9.48,-31.68c-7.05,-7.065 -16.275,-10.575 -26.28,-10.08zM42.24,37.68c5.145,1.455 11.07,4.35 17.16,10.44c6.105,6.09 9,12.015 10.44,17.16c-0.24,0 -0.48,0 -0.72,0c-14.895,0 -26.88,-11.985 -26.88,-26.88c0,-0.24 0,-0.48 0,-0.72zM60,114.48c0.555,1.005 1.17,1.92 1.8,2.88c-0.06,0.24 -0.105,0.48 -0.12,0.72c-0.435,3.15 -1.08,6.315 -1.92,9.36c-0.42,1.365 -0.045,2.835 0.96,3.84c1.005,1.005 2.475,1.38 3.84,0.96c2.865,-0.795 5.82,-1.365 8.76,-1.8c0.375,-0.06 0.735,-0.195 1.08,-0.36c1.005,0.675 2.07,1.32 3.12,1.92c-0.765,0.135 -1.515,0.195 -2.28,0.36c-8.79,1.8 -17.76,4.68 -23.4,10.32l-1.2,1.08l-2.4,-2.4l1.08,-1.2c5.64,-5.64 8.49,-14.61 10.32,-23.4c0.165,-0.765 0.225,-1.515 0.36,-2.28zM38.52,143.28c0.495,0 1.05,0.21 1.44,0.6l8.16,8.16c0.765,0.765 0.765,1.995 0,2.76l-28.08,27.96c-0.135,0.015 -0.75,0.285 -1.92,0c-1.56,-0.375 -3.675,-1.515 -5.52,-3.36c-1.845,-1.845 -2.985,-3.96 -3.36,-5.52c-0.285,-1.17 -0.015,-1.785 0,-1.92l27.96,-28.08c0.39,-0.39 0.825,-0.6 1.32,-0.6z"></path></g></g></g></svg></span></div>
+                                                                    <div class="col-md-5">Participant 2</div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </li>
+                                                            <li>
+                                                              <!--Section Title -->
+                                                              <a style="
+    left: 43.5%;
+">
+                                                                <span class="circle warning-color z-depth-1-half" style="border-radius:0px !important;-webkit-border-radius:0px !important;height:auto;width:auto;">12H30-13H45</span>
+                                                              </a>
+                                                
+                                                              <!-- Section Description -->
+                                                              <div class="step-content z-depth-1 ml-2 p-4" style="
+    left: 47% !important;
+    position: inherit;
+">
+                                                                <h4 class="font-weight-bold">Participants</h4>
+                                                                <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> Match 2</p>
+                                                                <div class="container">
+                                                                  <div class="row">
+                                                                    <div class="col-md-5">Participant 1</div>
+                                                                    <div class="col-md-2"><span class="badge badge-primary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M139.2,0.24c-11.28,0.36 -23.46,4.335 -35.76,12.48c-1.785,1.2 -2.28,3.615 -1.08,5.4c1.2,1.785 3.615,2.28 5.4,1.08c25.95,-17.19 48.03,-13.89 63.48,1.56c9.45,9.45 14.175,21.39 12.72,35.16c-1.455,13.77 -9.27,29.55 -25.8,46.08c-16.545,16.545 -33.525,25.335 -48.36,27.72c-14.835,2.385 -27.57,-1.41 -36.84,-10.68c-6.6,-6.6 -10.455,-15 -11.28,-24.6c0,-0.12 0,-0.24 0,-0.36c-0.36,-4.56 -0.075,-9.345 0.96,-14.4c0.51,-1.41 0.165,-3 -0.915,-4.05c-1.065,-1.065 -2.655,-1.395 -4.065,-0.855c-1.395,0.54 -2.37,1.845 -2.46,3.345c-1.095,5.31 -1.38,10.485 -1.08,15.48c-0.135,0.465 -0.165,0.96 -0.12,1.44c0.315,3.675 -0.105,12.075 -1.8,20.16c-1.695,8.085 -4.83,16.11 -8.28,19.56l-1.68,1.68c-1.14,-0.465 -2.37,-0.72 -3.6,-0.72c-2.46,0 -4.98,0.9 -6.84,2.76l-28.08,28.08c-2.535,2.535 -2.67,5.985 -1.92,9.12c0.75,3.135 2.595,6.315 5.4,9.12c2.805,2.805 5.985,4.65 9.12,5.4c3.135,0.75 6.585,0.615 9.12,-1.92l28.08,-28.08c2.79,-2.79 3.435,-6.975 2.04,-10.44l1.68,-1.68c3.45,-3.45 11.475,-6.495 19.56,-8.16c8.085,-1.665 16.47,-2.115 20.16,-1.8c0.36,0.015 0.72,-0.03 1.08,-0.12c4.185,0.285 8.52,0.105 12.96,-0.6c16.86,-2.7 35.145,-12.585 52.56,-30c17.415,-17.415 26.265,-34.755 27.96,-50.76c1.695,-16.005 -4.005,-30.405 -14.88,-41.28c-8.895,-8.895 -20.07,-14.25 -32.64,-15c-1.575,-0.09 -3.195,-0.165 -4.8,-0.12zM69.12,3.84c-19.035,0 -34.56,15.525 -34.56,34.56c0,19.035 15.525,34.56 34.56,34.56c19.035,0 34.56,-15.525 34.56,-34.56c0,-19.035 -15.525,-34.56 -34.56,-34.56zM68.4,11.52c0.24,0 0.48,0 0.72,0c14.895,0 26.88,11.985 26.88,26.88c0,0.24 0,0.48 0,0.72c-5.13,-1.455 -11.1,-4.38 -17.16,-10.44c-6.09,-6.09 -8.985,-12.03 -10.44,-17.16zM60.84,12.84c1.71,6.465 5.34,13.98 12.6,21.24c7.245,7.245 14.79,10.98 21.24,12.72c-2.655,8.13 -9.03,14.505 -17.16,17.16c-1.725,-6.465 -5.46,-13.98 -12.72,-21.24c-7.245,-7.245 -14.775,-10.98 -21.24,-12.72c2.655,-8.16 9.105,-14.535 17.28,-17.16zM139.08,16.56c-10.005,0.495 -20.715,4.8 -31.56,12.96c-1.695,1.29 -2.01,3.705 -0.72,5.4c1.29,1.695 3.705,2.01 5.4,0.72c9.96,-7.5 19.215,-10.995 27.24,-11.4c8.025,-0.405 14.865,2.13 20.52,7.8c6.675,6.675 9.165,14.88 7.32,24.84c-1.845,9.96 -8.4,21.735 -20.52,33.84c-12.105,12.12 -24.81,19.68 -35.88,22.44c-11.07,2.76 -20.07,0.915 -26.52,-5.52c-6.255,-6.27 -8.19,-14.91 -5.76,-25.56c0.495,-1.395 0.135,-2.955 -0.9,-4.005c-1.05,-1.035 -2.61,-1.395 -4.005,-0.9c-1.395,0.495 -2.385,1.755 -2.535,3.225c-2.835,12.48 -0.63,24.45 7.68,32.76c8.55,8.55 21.075,10.665 33.96,7.44c12.885,-3.225 26.61,-11.61 39.48,-24.48c12.87,-12.87 20.325,-25.725 22.56,-37.8c2.235,-12.075 -1.155,-23.355 -9.48,-31.68c-7.05,-7.065 -16.275,-10.575 -26.28,-10.08zM42.24,37.68c5.145,1.455 11.07,4.35 17.16,10.44c6.105,6.09 9,12.015 10.44,17.16c-0.24,0 -0.48,0 -0.72,0c-14.895,0 -26.88,-11.985 -26.88,-26.88c0,-0.24 0,-0.48 0,-0.72zM60,114.48c0.555,1.005 1.17,1.92 1.8,2.88c-0.06,0.24 -0.105,0.48 -0.12,0.72c-0.435,3.15 -1.08,6.315 -1.92,9.36c-0.42,1.365 -0.045,2.835 0.96,3.84c1.005,1.005 2.475,1.38 3.84,0.96c2.865,-0.795 5.82,-1.365 8.76,-1.8c0.375,-0.06 0.735,-0.195 1.08,-0.36c1.005,0.675 2.07,1.32 3.12,1.92c-0.765,0.135 -1.515,0.195 -2.28,0.36c-8.79,1.8 -17.76,4.68 -23.4,10.32l-1.2,1.08l-2.4,-2.4l1.08,-1.2c5.64,-5.64 8.49,-14.61 10.32,-23.4c0.165,-0.765 0.225,-1.515 0.36,-2.28zM38.52,143.28c0.495,0 1.05,0.21 1.44,0.6l8.16,8.16c0.765,0.765 0.765,1.995 0,2.76l-28.08,27.96c-0.135,0.015 -0.75,0.285 -1.92,0c-1.56,-0.375 -3.675,-1.515 -5.52,-3.36c-1.845,-1.845 -2.985,-3.96 -3.36,-5.52c-0.285,-1.17 -0.015,-1.785 0,-1.92l27.96,-28.08c0.39,-0.39 0.825,-0.6 1.32,-0.6z"></path></g></g></g></svg></span></div>
+                                                                    <div class="col-md-5">Participant 2</div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </li>
+                                                         
+                                                
+                                                          </ul>
+                                                        <!-- Timeline Wrapper -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Timeline -->
+                                                </section>
+                                  </div>
+                                    <div class="tab-pane fade " id="list-tennis" role="tabpanel" aria-labelledby="list-tennis-list">
                                             <section class="p-5">
 
                                                     <!-- Timeline -->
@@ -235,91 +302,59 @@ h3 {
                                                           <!-- Timeline Wrapper -->
                                                           <ul class="stepper stepper-vertical timeline timeline-basic pl-0">
                                                 
-                                                            <li>
-                                                              <!--Section Title -->
-                                                              <a href="#!">
-                                                                <span class="circle primary-color z-depth-1-half"><i class="fas fa-check" aria-hidden="true"></i></span>
-                                                              </a>
-                                                
-                                                              <!-- Section Description -->
-                                                              <div class="step-content z-depth-1 ml-2 p-4">
-                                                                <h4 class="font-weight-bold">Ut enim ad minim veniam</h4>
-                                                                <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> 11 hours ago via Twitter</p>
-                                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                                                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                              </div>
-                                                            </li>
-                                                            <li class="timeline-inverted">
-                                                              <!--Section Title -->
-                                                              <a href="#!">
-                                                                <span class="circle warning-color z-depth-1-half"><i class="fas fa-credit-card" aria-hidden="true"></i></span>
-                                                              </a>
-                                                
-                                                              <!-- Section Description -->
-                                                              <div class="step-content z-depth-1 mr-xl-2 p-4">
-                                                                <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                                                                <p class=" mt-4 mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                                                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                                                  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                                                                  aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                                              </div>
-                                                            </li>
-                                                            <li>
-                                                              <!--Section Title -->
-                                                              <a href="#!">
-                                                                <span class="circle danger-color z-depth-1-half"><i class="fas fa-credit-card" aria-hidden="true"></i></span>
-                                                              </a>
-                                                
-                                                              <!-- Section Description -->
-                                                              <div class="step-content z-depth-1 ml-2 p-4">
-                                                                <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
-                                                                <p class="mt-4 mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                                                  adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                                                  quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                                                                  laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-                                                                  ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                                                                  voluptas nulla pariatur?</p>
-                                                              </div>
-                                                            </li>
-                                                            <li class="timeline-inverted">
-                                                              <!--Section Title -->
-                                                              <a href="#!">
-                                                                <span class="circle info-color z-depth-1-half"><i class="far fa-save" aria-hidden="true"></i></span>
-                                                              </a>
-                                                
-                                                              <!-- Section Description -->
-                                                              <div class="step-content z-depth-1 mr-xl-2 p-4">
-                                                                <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
-                                                                <p class="mt-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                                                  voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                                                                  non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-                                                                  fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                                                                <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                                                  consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                                                  dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                                                                  tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-                                                              </div>
-                                                            </li>
-                                                            <li>
-                                                              <!--Section Title -->
-                                                              <a href="#!">
-                                                                <span class="circle success-color z-depth-1-half"><i class="far fa-thumbs-up" aria-hidden="true"></i></span>
-                                                              </a>
-                                                
-                                                              <!-- Section Description -->
-                                                              <div class="step-content z-depth-1 ml-2 p-4">
-                                                                <h4 class="font-weight-bold">Mussum ipsum cacilds</h4>
-                                                                <p class="mt-4 mb-0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
-                                                                  minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                                                                  Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-                                                                  voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-                                                                  delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
-                                                                  asperiores repellat.</p>
-                                                              </div>
-                                                            </li>
-                                                
-                                                          </ul>
+                                                              <li>
+                                                                <!--Section Title -->
+                                                                <a style="
+      left: 43.5%;
+  ">
+                                                                  <span class="circle primary-color z-depth-1-half" style="border-radius:0px !important;-webkit-border-radius:0px !important;height:auto;width:auto;">12H30-13H45</span>
+                                                                </a>
+                                                  
+                                                                <!-- Section Description -->
+                                                                <div class="step-content z-depth-1 ml-2 p-4" style="
+      left: 17% !important;
+      /* margin-left: 1500px; */
+      /* float: right; */
+      position: inherit;
+  ">
+                                                                  <h4 class="font-weight-bold">Participants</h4>
+                                                                  <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> Match 1</p>
+                                                                  <div class="container">
+                                                                    <div class="row">
+                                                                      <div class="col-md-5">Participant 1</div>
+                                                                      <div class="col-md-2"><span class="badge badge-primary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M139.2,0.24c-11.28,0.36 -23.46,4.335 -35.76,12.48c-1.785,1.2 -2.28,3.615 -1.08,5.4c1.2,1.785 3.615,2.28 5.4,1.08c25.95,-17.19 48.03,-13.89 63.48,1.56c9.45,9.45 14.175,21.39 12.72,35.16c-1.455,13.77 -9.27,29.55 -25.8,46.08c-16.545,16.545 -33.525,25.335 -48.36,27.72c-14.835,2.385 -27.57,-1.41 -36.84,-10.68c-6.6,-6.6 -10.455,-15 -11.28,-24.6c0,-0.12 0,-0.24 0,-0.36c-0.36,-4.56 -0.075,-9.345 0.96,-14.4c0.51,-1.41 0.165,-3 -0.915,-4.05c-1.065,-1.065 -2.655,-1.395 -4.065,-0.855c-1.395,0.54 -2.37,1.845 -2.46,3.345c-1.095,5.31 -1.38,10.485 -1.08,15.48c-0.135,0.465 -0.165,0.96 -0.12,1.44c0.315,3.675 -0.105,12.075 -1.8,20.16c-1.695,8.085 -4.83,16.11 -8.28,19.56l-1.68,1.68c-1.14,-0.465 -2.37,-0.72 -3.6,-0.72c-2.46,0 -4.98,0.9 -6.84,2.76l-28.08,28.08c-2.535,2.535 -2.67,5.985 -1.92,9.12c0.75,3.135 2.595,6.315 5.4,9.12c2.805,2.805 5.985,4.65 9.12,5.4c3.135,0.75 6.585,0.615 9.12,-1.92l28.08,-28.08c2.79,-2.79 3.435,-6.975 2.04,-10.44l1.68,-1.68c3.45,-3.45 11.475,-6.495 19.56,-8.16c8.085,-1.665 16.47,-2.115 20.16,-1.8c0.36,0.015 0.72,-0.03 1.08,-0.12c4.185,0.285 8.52,0.105 12.96,-0.6c16.86,-2.7 35.145,-12.585 52.56,-30c17.415,-17.415 26.265,-34.755 27.96,-50.76c1.695,-16.005 -4.005,-30.405 -14.88,-41.28c-8.895,-8.895 -20.07,-14.25 -32.64,-15c-1.575,-0.09 -3.195,-0.165 -4.8,-0.12zM69.12,3.84c-19.035,0 -34.56,15.525 -34.56,34.56c0,19.035 15.525,34.56 34.56,34.56c19.035,0 34.56,-15.525 34.56,-34.56c0,-19.035 -15.525,-34.56 -34.56,-34.56zM68.4,11.52c0.24,0 0.48,0 0.72,0c14.895,0 26.88,11.985 26.88,26.88c0,0.24 0,0.48 0,0.72c-5.13,-1.455 -11.1,-4.38 -17.16,-10.44c-6.09,-6.09 -8.985,-12.03 -10.44,-17.16zM60.84,12.84c1.71,6.465 5.34,13.98 12.6,21.24c7.245,7.245 14.79,10.98 21.24,12.72c-2.655,8.13 -9.03,14.505 -17.16,17.16c-1.725,-6.465 -5.46,-13.98 -12.72,-21.24c-7.245,-7.245 -14.775,-10.98 -21.24,-12.72c2.655,-8.16 9.105,-14.535 17.28,-17.16zM139.08,16.56c-10.005,0.495 -20.715,4.8 -31.56,12.96c-1.695,1.29 -2.01,3.705 -0.72,5.4c1.29,1.695 3.705,2.01 5.4,0.72c9.96,-7.5 19.215,-10.995 27.24,-11.4c8.025,-0.405 14.865,2.13 20.52,7.8c6.675,6.675 9.165,14.88 7.32,24.84c-1.845,9.96 -8.4,21.735 -20.52,33.84c-12.105,12.12 -24.81,19.68 -35.88,22.44c-11.07,2.76 -20.07,0.915 -26.52,-5.52c-6.255,-6.27 -8.19,-14.91 -5.76,-25.56c0.495,-1.395 0.135,-2.955 -0.9,-4.005c-1.05,-1.035 -2.61,-1.395 -4.005,-0.9c-1.395,0.495 -2.385,1.755 -2.535,3.225c-2.835,12.48 -0.63,24.45 7.68,32.76c8.55,8.55 21.075,10.665 33.96,7.44c12.885,-3.225 26.61,-11.61 39.48,-24.48c12.87,-12.87 20.325,-25.725 22.56,-37.8c2.235,-12.075 -1.155,-23.355 -9.48,-31.68c-7.05,-7.065 -16.275,-10.575 -26.28,-10.08zM42.24,37.68c5.145,1.455 11.07,4.35 17.16,10.44c6.105,6.09 9,12.015 10.44,17.16c-0.24,0 -0.48,0 -0.72,0c-14.895,0 -26.88,-11.985 -26.88,-26.88c0,-0.24 0,-0.48 0,-0.72zM60,114.48c0.555,1.005 1.17,1.92 1.8,2.88c-0.06,0.24 -0.105,0.48 -0.12,0.72c-0.435,3.15 -1.08,6.315 -1.92,9.36c-0.42,1.365 -0.045,2.835 0.96,3.84c1.005,1.005 2.475,1.38 3.84,0.96c2.865,-0.795 5.82,-1.365 8.76,-1.8c0.375,-0.06 0.735,-0.195 1.08,-0.36c1.005,0.675 2.07,1.32 3.12,1.92c-0.765,0.135 -1.515,0.195 -2.28,0.36c-8.79,1.8 -17.76,4.68 -23.4,10.32l-1.2,1.08l-2.4,-2.4l1.08,-1.2c5.64,-5.64 8.49,-14.61 10.32,-23.4c0.165,-0.765 0.225,-1.515 0.36,-2.28zM38.52,143.28c0.495,0 1.05,0.21 1.44,0.6l8.16,8.16c0.765,0.765 0.765,1.995 0,2.76l-28.08,27.96c-0.135,0.015 -0.75,0.285 -1.92,0c-1.56,-0.375 -3.675,-1.515 -5.52,-3.36c-1.845,-1.845 -2.985,-3.96 -3.36,-5.52c-0.285,-1.17 -0.015,-1.785 0,-1.92l27.96,-28.08c0.39,-0.39 0.825,-0.6 1.32,-0.6z"></path></g></g></g></svg></span></div>
+                                                                      <div class="col-md-5">Participant 2</div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <!--Section Title -->
+                                                                <a style="
+      left: 43.5%;
+  ">
+                                                                  <span class="circle warning-color z-depth-1-half" style="border-radius:0px !important;-webkit-border-radius:0px !important;height:auto;width:auto;">12H30-13H45</span>
+                                                                </a>
+                                                  
+                                                                <!-- Section Description -->
+                                                                <div class="step-content z-depth-1 ml-2 p-4" style="
+      left: 47% !important;
+      position: inherit;
+  ">
+                                                                  <h4 class="font-weight-bold">Participants</h4>
+                                                                  <p class="text-muted mt-3"><i class="far fa-clock" aria-hidden="true"></i> Match 2</p>
+                                                                  <div class="container">
+                                                                    <div class="row">
+                                                                      <div class="col-md-5">Participant 1</div>
+                                                                      <div class="col-md-2"><span class="badge badge-primary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22" height="22" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M139.2,0.24c-11.28,0.36 -23.46,4.335 -35.76,12.48c-1.785,1.2 -2.28,3.615 -1.08,5.4c1.2,1.785 3.615,2.28 5.4,1.08c25.95,-17.19 48.03,-13.89 63.48,1.56c9.45,9.45 14.175,21.39 12.72,35.16c-1.455,13.77 -9.27,29.55 -25.8,46.08c-16.545,16.545 -33.525,25.335 -48.36,27.72c-14.835,2.385 -27.57,-1.41 -36.84,-10.68c-6.6,-6.6 -10.455,-15 -11.28,-24.6c0,-0.12 0,-0.24 0,-0.36c-0.36,-4.56 -0.075,-9.345 0.96,-14.4c0.51,-1.41 0.165,-3 -0.915,-4.05c-1.065,-1.065 -2.655,-1.395 -4.065,-0.855c-1.395,0.54 -2.37,1.845 -2.46,3.345c-1.095,5.31 -1.38,10.485 -1.08,15.48c-0.135,0.465 -0.165,0.96 -0.12,1.44c0.315,3.675 -0.105,12.075 -1.8,20.16c-1.695,8.085 -4.83,16.11 -8.28,19.56l-1.68,1.68c-1.14,-0.465 -2.37,-0.72 -3.6,-0.72c-2.46,0 -4.98,0.9 -6.84,2.76l-28.08,28.08c-2.535,2.535 -2.67,5.985 -1.92,9.12c0.75,3.135 2.595,6.315 5.4,9.12c2.805,2.805 5.985,4.65 9.12,5.4c3.135,0.75 6.585,0.615 9.12,-1.92l28.08,-28.08c2.79,-2.79 3.435,-6.975 2.04,-10.44l1.68,-1.68c3.45,-3.45 11.475,-6.495 19.56,-8.16c8.085,-1.665 16.47,-2.115 20.16,-1.8c0.36,0.015 0.72,-0.03 1.08,-0.12c4.185,0.285 8.52,0.105 12.96,-0.6c16.86,-2.7 35.145,-12.585 52.56,-30c17.415,-17.415 26.265,-34.755 27.96,-50.76c1.695,-16.005 -4.005,-30.405 -14.88,-41.28c-8.895,-8.895 -20.07,-14.25 -32.64,-15c-1.575,-0.09 -3.195,-0.165 -4.8,-0.12zM69.12,3.84c-19.035,0 -34.56,15.525 -34.56,34.56c0,19.035 15.525,34.56 34.56,34.56c19.035,0 34.56,-15.525 34.56,-34.56c0,-19.035 -15.525,-34.56 -34.56,-34.56zM68.4,11.52c0.24,0 0.48,0 0.72,0c14.895,0 26.88,11.985 26.88,26.88c0,0.24 0,0.48 0,0.72c-5.13,-1.455 -11.1,-4.38 -17.16,-10.44c-6.09,-6.09 -8.985,-12.03 -10.44,-17.16zM60.84,12.84c1.71,6.465 5.34,13.98 12.6,21.24c7.245,7.245 14.79,10.98 21.24,12.72c-2.655,8.13 -9.03,14.505 -17.16,17.16c-1.725,-6.465 -5.46,-13.98 -12.72,-21.24c-7.245,-7.245 -14.775,-10.98 -21.24,-12.72c2.655,-8.16 9.105,-14.535 17.28,-17.16zM139.08,16.56c-10.005,0.495 -20.715,4.8 -31.56,12.96c-1.695,1.29 -2.01,3.705 -0.72,5.4c1.29,1.695 3.705,2.01 5.4,0.72c9.96,-7.5 19.215,-10.995 27.24,-11.4c8.025,-0.405 14.865,2.13 20.52,7.8c6.675,6.675 9.165,14.88 7.32,24.84c-1.845,9.96 -8.4,21.735 -20.52,33.84c-12.105,12.12 -24.81,19.68 -35.88,22.44c-11.07,2.76 -20.07,0.915 -26.52,-5.52c-6.255,-6.27 -8.19,-14.91 -5.76,-25.56c0.495,-1.395 0.135,-2.955 -0.9,-4.005c-1.05,-1.035 -2.61,-1.395 -4.005,-0.9c-1.395,0.495 -2.385,1.755 -2.535,3.225c-2.835,12.48 -0.63,24.45 7.68,32.76c8.55,8.55 21.075,10.665 33.96,7.44c12.885,-3.225 26.61,-11.61 39.48,-24.48c12.87,-12.87 20.325,-25.725 22.56,-37.8c2.235,-12.075 -1.155,-23.355 -9.48,-31.68c-7.05,-7.065 -16.275,-10.575 -26.28,-10.08zM42.24,37.68c5.145,1.455 11.07,4.35 17.16,10.44c6.105,6.09 9,12.015 10.44,17.16c-0.24,0 -0.48,0 -0.72,0c-14.895,0 -26.88,-11.985 -26.88,-26.88c0,-0.24 0,-0.48 0,-0.72zM60,114.48c0.555,1.005 1.17,1.92 1.8,2.88c-0.06,0.24 -0.105,0.48 -0.12,0.72c-0.435,3.15 -1.08,6.315 -1.92,9.36c-0.42,1.365 -0.045,2.835 0.96,3.84c1.005,1.005 2.475,1.38 3.84,0.96c2.865,-0.795 5.82,-1.365 8.76,-1.8c0.375,-0.06 0.735,-0.195 1.08,-0.36c1.005,0.675 2.07,1.32 3.12,1.92c-0.765,0.135 -1.515,0.195 -2.28,0.36c-8.79,1.8 -17.76,4.68 -23.4,10.32l-1.2,1.08l-2.4,-2.4l1.08,-1.2c5.64,-5.64 8.49,-14.61 10.32,-23.4c0.165,-0.765 0.225,-1.515 0.36,-2.28zM38.52,143.28c0.495,0 1.05,0.21 1.44,0.6l8.16,8.16c0.765,0.765 0.765,1.995 0,2.76l-28.08,27.96c-0.135,0.015 -0.75,0.285 -1.92,0c-1.56,-0.375 -3.675,-1.515 -5.52,-3.36c-1.845,-1.845 -2.985,-3.96 -3.36,-5.52c-0.285,-1.17 -0.015,-1.785 0,-1.92l27.96,-28.08c0.39,-0.39 0.825,-0.6 1.32,-0.6z"></path></g></g></g></svg></span></div>
+                                                                      <div class="col-md-5">Participant 2</div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+                                                           
+                                                  
+                                                            </ul>
                                                           <!-- Timeline Wrapper -->
                                                         </div>
                                                       </div>
@@ -362,18 +397,12 @@ h3 {
                     <div class="row">
                         <div class="col-1">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home"
-                              role="tab" aria-controls="home">Football</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
-                              role="tab" aria-controls="profile">Basketball</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
-                              role="tab" aria-controls="messages">Tennis</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Volleyball</a>
-                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Ping-Pong</a>
-                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Other</a>
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Football</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Basketball</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tennis</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Volleyball</a>
+                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Ping-Pong</a>
+                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Other</a>
                           </div>
                         </div>
                         <div class="col-10">
@@ -515,18 +544,12 @@ h3 {
                     <div class="row">
                         <div class="col-1">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home"
-                              role="tab" aria-controls="home">Football</a>
-                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
-                              role="tab" aria-controls="profile">Basketball</a>
-                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
-                              role="tab" aria-controls="messages">Tennis</a>
-                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Volleyball</a>
-                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Ping-Pong</a>
-                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-                              role="tab" aria-controls="settings">Other</a>
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Football</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Basketball</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Tennis</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Volleyball</a>
+                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Ping-Pong</a>
+                              <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Other</a>
                           </div>
                         </div>
                         <div class="col-10">
@@ -739,7 +762,8 @@ h3 {
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script><div class="hiddendiv common">
+  <script type="text/javascript" src="js/mdb.min.js"></script><div class="hiddendiv common"></div><div class="hiddendiv common">
 
-  </body>
-  </html>
+  
+  
+</div></body>
