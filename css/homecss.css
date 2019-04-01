@@ -10,3 +10,32 @@ body{
 *{
     font-family: 'Montserrat', sans-serif;
 }
+.cardfirstback{
+    position: relative;
+    border-top: none !important;
+    border-left:none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    padding: 50px;
+
+}
+.cardfirstback:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    border-left:10px solid white;
+    height  : 50%;
+    width   : 50%;  /* or 100px */
+    border-bottom:10px solid white;
+  }
+  .cardfirstback:after {
+    content : "";
+    position: absolute;
+    right    : 0;
+    top  : 0;
+    border-right:10px solid white;
+    height  : 50%;
+    width   : 50%;  /* or 100px */
+    border-top:10px solid white;
+  }

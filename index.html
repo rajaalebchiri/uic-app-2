@@ -33,7 +33,6 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +40,7 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("./images/mkj.png");
+  background-image: url("./images/back22.png");
   min-height: 100%;
 }
 
@@ -91,9 +90,7 @@ h3 {
 
 <body>
 
-  <nav class=" navbar fixed-top navbar-expand-lg navbar-light transparent" style="
-    background-color: white;
-">
+  <nav class=" navbar fixed-top navbar-expand-lg navbar-light transparent" style="background-color: transparent;">
     <a class="navbar-brand" href="index.html"><img src="./images/logo.png" style="height:57px;margin-left:160px;" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -122,20 +119,34 @@ h3 {
     </div>
   </nav>
         <div class="bgimg-1">
-                <div class="caption">
-                        <div class="row" style="
-                        margin-right: 0px;
-                        margin-left: 0px;
-                    ">
-                                <!--Grid column-->
-                                <div class="col-md-12 mb-4 white-text text-center">
-                                  <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong style="
-    font-size: 56px;
-">UIC OLYMPIC GAMES</strong></h1>
-                                  
-                                </div>
-                                <!--Grid column-->
+                <div class="caption" style="top:20% !important;">
+                    <div class="container">
+                        <!--Grid row-->
+                        <div class="row pt-lg-5 mt-lg-5">
+                          <!--Grid column-->
+                          <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text  text-md-left wow fadeInLeft"
+                            data-wow-delay="0.3s">
+                            <h1 class="display-4 font-weight-bold"><span style="font-size:56px;">07, 08, 09 </span><br>April<br>2019</h1>
+                            <hr class="hr-light">
+                            <h2 class="mb-3">Université Internationale de Casablanca</h2>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-md-6 col-xl-5 mb-4">
+                            <!--Form-->
+                            <div class="card wow fadeInRight cardfirstback" style="    box-shadow: none !important;
+                            -webkit-box-shadow: none !important;" data-wow-delay="0.3s">
+                              <div class="card-body z-depth-2" style="    box-shadow: none !important;
+                              -webkit-box-shadow: none !important;">
+                                <h1 style="font-size:66px;font-weight:700;color:white;">UIC<br>OLYMPIC<br>GAMES</h1>
                               </div>
+                            </div>
+                            <!--/.Form-->
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </div>
                 </div>
               </div>
               
@@ -534,7 +545,9 @@ img {
     letter-spacing: .25rem;
 }
 
+
               </style>
+
           <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
           <!-- Bootstrap tooltips -->
           <script type="text/javascript" src="js/popper.min.js"></script>
@@ -553,7 +566,20 @@ img {
 
 
 
-
+          <script>
+              $(document).ready(function(){
+              $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 150) {
+                  $(".transparent").css("background" , "white");
+                }
+            
+                else{
+                  $(".transparent").css("background" , "transparent");  	
+                }
+              })
+            })
+            </script>
 
 
 
