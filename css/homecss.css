@@ -39,3 +39,32 @@ body{
     width   : 50%;  /* or 100px */
     border-top:10px solid white;
   }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+      background:#F1F0F6;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+      border:none !important;
+      background: #0076B3;
+      color: white !important; 
+      font-size: 28px;
+      font-weight: 700;
+  } 
+   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  > h3{
+color: white;
+}
+.nav-item{
+    padding:15px !important;
+}
+.featuresbuttons{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+.colored-feature-btn{
+    color:#0076B3;
+    border: 2px solid #0076B3;
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px 40px;
+}
