@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -18,78 +19,12 @@
   <link rel="stylesheet" href="./css/mainabout.css">
   <link rel="stylesheet" href="./css/homecss.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-      @media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("./images/back22.png");
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url("./images/back3.png");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("./images/back3.png");
-    min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
-</style>
-
+  <link href="./css/style-final.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!--Navbar-->
   <nav class=" navbar fixed-top navbar-expand-lg navbar-light transparent" style="background-color: transparent;">
     <a class="navbar-brand" href="index.html"><img src="./images/logo.png" style="height:57px;margin-left:160px;" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,561 +32,352 @@ h3 {
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
       <ul class="navbar-nav ml-auto" style="margin-right:117px !important;">
-        <li class="nav-item active1" style="
-    background-color: none !important;
-    /* border-bottom: 3px solid #0076b3; */
-">
+        <li class="nav-item active1" style="background-color: none !important;">
           <a class="nav-link waves-effect waves-light" href="index.html" style="color: #0076b3 !important;font-weight: 700;border-bottom: 3px solid #0076b3;">Home</a>
         </li>
         <li class="nav-item ">
             <a class="nav-link waves-effect waves-light" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link waves-effect waves-light" href="ecoles.html">Participants</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="programme.html">Schedule</a>
-              </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="ecoles.html">Participants</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="programme.html">Schedule</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link waves-effect waves-light" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
-        <div class="bgimg-1">
-                <div class="caption" style="top:20% !important;">
-                    <div class="container">
-                        <!--Grid row-->
-                        <div class="row pt-lg-5 mt-lg-5">
-                          <!--Grid column-->
-                          <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text  text-md-left wow fadeInLeft"
-                            data-wow-delay="0.3s">
-                            <h1 class="display-4 font-weight-bold"><span style="font-size:56px;">07, 08, 09 </span><br>April<br>2019</h1>
-                            <hr class="hr-light">
-                            <h2 class="mb-3">Université Internationale de Casablanca</h2>
-                          </div>
-                          <!--Grid column-->
-                          <!--Grid column-->
-                          <div class="col-md-6 col-xl-5 mb-4">
-                            <!--Form-->
-                            <div class="card wow fadeInRight cardfirstback" style="    box-shadow: none !important;
-                            -webkit-box-shadow: none !important;" data-wow-delay="0.3s">
-                              <div class="card-body z-depth-2" style="    box-shadow: none !important;
-                              -webkit-box-shadow: none !important;">
-                                <h1 style="font-size:66px;font-weight:700;color:white;">UIC<br>OLYMPIC<br>GAMES</h1>
-                              </div>
-                            </div>
-                            <!--/.Form-->
-                          </div>
-                          <!--Grid column-->
-                        </div>
-                        <!--Grid row-->
-                      </div>
-                </div>
-              </div>
-              
-              <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;margin-left: 91px;margin-right: 91px;">
-                    <div class="row">
-        
+  <!--/Navbar-->
 
-                      <!-- Grid column -->
-                      <div class="col-lg-6" style="padding-top: 35px;">
-                      
-                          <!-- Category -->
-                          <a href="uic-olympic.html">
-                            <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;">About Us</h6>
-                          </a>
-                          <!-- Post title -->
-                          <h3 class="font-weight-bold mb-3" style="font-size:20px;"><strong>UIC OLYMPIC GAMES</strong></h3>
-                          <!-- Excerpt -->
-                          <p style="font-size:15px;">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.</p>
-                          <!-- Post data -->
-                          
-                          <a class="btn  btn-md waves-effect waves-light" href="uic-olympic.html" style="
-        margin-left: 0 !important;font-size:13px;background-color: #0076b3!important;
-    ">Lire La Suite</a>
-                  
-                        </div>
-                        <!-- Grid column -->
-                            <!-- Grid column -->
-                            <div class="col-lg-6 text-center" id="countdown">
-                                
-                            </div>
-                      
-                            
-                            <!-- Grid column -->
-                      
-                            
-                      
-                          </div>
+  <!--bgimg-1-->
+  <div class="bgimg-1">
+      <div class="caption">
+        <div class="container">
+          <!--Grid row-->
+          <div class="row pt-lg-5 mt-lg-5">
+          <!--Grid column-->
+          <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text  text-md-left wow fadeInLeft" data-wow-delay="0.3s">
+            <h1 class="display-4 font-weight-bold"><span style="font-size:56px;">07, 08, 09 </span><br>April<br>2019</h1>
+            <hr class="hr-light">
+            <h2 class="mb-3">Université Internationale de Casablanca</h2>
+          </div>
+          <!--/Grid column-->
+          <!--Grid column-->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <!--Form-->
+            <div class="card wow fadeInRight cardfirstback" style="box-shadow: none !important; -webkit-box-shadow: none !important;" data-wow-delay="0.3s">
+              <div class="card-body z-depth-2" style="box-shadow: none !important;-webkit-box-shadow: none !important;">
+                <h1 class="triangle" >UIC<br>OLYMPIC<br>GAMES</h1>
               </div>
-              
-              <div class="bgimg-2">
-                <div class="caption" style="    top: 10% !important;                ">
-                    <div class="col-md-12 mb-4 white-text text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="150" height="150"
-viewBox="0 0 192 192"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M38.4,46.08c-21.255,0 -38.4,17.145 -38.4,38.4c0,19.29 14.13,35.16 32.64,37.92c-1.245,3.78 -1.92,7.785 -1.92,12c0,21.255 17.145,38.4 38.4,38.4c10.5,0 19.95,-4.245 26.88,-11.04c6.93,6.795 16.38,11.04 26.88,11.04c21.255,0 38.4,-17.145 38.4,-38.4c0,-4.215 -0.675,-8.22 -1.92,-12c18.51,-2.76 32.64,-18.63 32.64,-37.92c0,-21.255 -17.145,-38.4 -38.4,-38.4c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08zM38.4,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.47 0.765,8.73 2.16,12.72c-10.155,2.535 -18.63,9.06 -23.76,17.88c-15.975,-1.215 -28.32,-14.28 -28.32,-30.6c0,-17.145 13.575,-30.72 30.72,-30.72zM96,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.215 0.675,8.22 1.92,12c-8.205,1.23 -15.48,5.025 -21.12,10.56c-5.64,-5.535 -12.915,-9.33 -21.12,-10.56c1.245,-3.78 1.92,-7.785 1.92,-12c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM153.6,53.76c17.145,0 30.72,13.575 30.72,30.72c0,16.32 -12.345,29.385 -28.32,30.6c-5.13,-8.82 -13.605,-15.345 -23.76,-17.88c1.395,-3.99 2.16,-8.25 2.16,-12.72c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM67.2,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM124.8,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM72,103.8c7.5,0.69 14.28,3.975 19.2,9c-0.405,0.6 -0.825,1.17 -1.2,1.8c-7.26,-1.395 -13.59,-5.31 -18,-10.8zM119.76,103.8c0.075,-0.015 0.165,0 0.24,0c-4.41,5.49 -10.74,9.405 -18,10.8c-0.375,-0.63 -0.795,-1.2 -1.2,-1.8c4.875,-4.98 11.55,-8.265 18.96,-9zM61.68,104.52c-4.08,4.74 -9.525,8.31 -15.84,9.84c4.08,-4.74 9.525,-8.31 15.84,-9.84zM130.32,104.52c6.315,1.53 11.76,5.1 15.84,9.84c-6.315,-1.53 -11.76,-5.1 -15.84,-9.84zM67.2,109.8c5.055,5.76 11.76,9.96 19.44,11.88c-1.395,3.99 -2.16,8.25 -2.16,12.72c0,8.025 2.52,15.45 6.72,21.6c-5.55,5.67 -13.38,9.12 -22.08,9.12c-17.145,0 -30.72,-13.575 -30.72,-30.72c0,-4.155 0.825,-8.055 2.28,-11.64c10.605,-0.615 19.95,-5.49 26.52,-12.96zM124.8,109.8c6.57,7.47 15.915,12.345 26.52,12.96c1.455,3.585 2.28,7.485 2.28,11.64c0,17.145 -13.575,30.72 -30.72,30.72c-8.7,0 -16.53,-3.45 -22.08,-9.12c4.2,-6.15 6.72,-13.575 6.72,-21.6c0,-4.47 -0.765,-8.73 -2.16,-12.72c7.68,-1.92 14.385,-6.12 19.44,-11.88zM94.44,122.76c0.525,0.015 1.035,0.12 1.56,0.12c0.525,0 1.035,-0.105 1.56,-0.12c1.455,3.585 2.28,7.485 2.28,11.64c0,5.46 -1.41,10.59 -3.84,15c-2.43,-4.41 -3.84,-9.54 -3.84,-15c0,-4.155 0.825,-8.055 2.28,-11.64z"></path></g></g></g></svg>
-                        <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s" style="font-size:56px;"><strong>UIC OLYMPIC GAMES</strong></h1> 
-                    </div>
-                </div>
-              </div>
-              
-              <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;margin-left: 91px;margin-right: 91px;">
-                    <div class="row">
-        
-                            <!-- Grid column -->
-                            <div class="col-lg-6">
-                      
-                              <!-- Featured image -->
-                              <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4" style="
-            /* padding-top: 50px; */
-            /* border-bottom-width: 50px; */
-            padding-left: 90px;
-            padding-right: 90px;
-            padding-bottom: 0px;
-        ">
-                                <img class="img-fluid" src="./images/logo.png" alt="Sample image">
-                                <a>
-                                  <div class="mask rgba-white-slight waves-effect waves-light" style="
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        "></div>
-                                </a>
-                              </div>
-                      
-                            </div>
-                            <!-- Grid column -->
-                      
-                            <!-- Grid column -->
-                            <div class="col-lg-6" style="padding-top: 65px;">
-                      
-                              <!-- Category -->
-                              <a href="ecoles.html" class="green-text">
-                                <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;"> Partcipants </h6>
-                              </a>
-                              <!-- Post title -->
-                              <h3 class="font-weight-bold mb-3" style="font-size:20px;"><strong>UIC OLYMPIC GAMES</strong></h3>
-                              <!-- Excerpt -->
-                              <p style="font-size:15px;">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.</p>
-                              <!-- Post data -->
-                              
-                              <a class="btn  btn-md waves-effect waves-light" href="uic-olympic.html" style="
-            margin-left: 0 !important;font-size:13px;background-color: #0076b3!important;
-        ">Lire La Suite</a>
-                      
-                            </div>
-                            <!-- Grid column -->
-                      
-                          </div>
-              </div>
-              
-              <div class="bgimg-3">
-                  <div class="caption" style="    top: 10% !important;                ">
-                      <div class="col-md-12 mb-4 white-text text-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-  width="150" height="150"
-  viewBox="0 0 192 192"
-  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M38.4,46.08c-21.255,0 -38.4,17.145 -38.4,38.4c0,19.29 14.13,35.16 32.64,37.92c-1.245,3.78 -1.92,7.785 -1.92,12c0,21.255 17.145,38.4 38.4,38.4c10.5,0 19.95,-4.245 26.88,-11.04c6.93,6.795 16.38,11.04 26.88,11.04c21.255,0 38.4,-17.145 38.4,-38.4c0,-4.215 -0.675,-8.22 -1.92,-12c18.51,-2.76 32.64,-18.63 32.64,-37.92c0,-21.255 -17.145,-38.4 -38.4,-38.4c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08zM38.4,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.47 0.765,8.73 2.16,12.72c-10.155,2.535 -18.63,9.06 -23.76,17.88c-15.975,-1.215 -28.32,-14.28 -28.32,-30.6c0,-17.145 13.575,-30.72 30.72,-30.72zM96,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.215 0.675,8.22 1.92,12c-8.205,1.23 -15.48,5.025 -21.12,10.56c-5.64,-5.535 -12.915,-9.33 -21.12,-10.56c1.245,-3.78 1.92,-7.785 1.92,-12c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM153.6,53.76c17.145,0 30.72,13.575 30.72,30.72c0,16.32 -12.345,29.385 -28.32,30.6c-5.13,-8.82 -13.605,-15.345 -23.76,-17.88c1.395,-3.99 2.16,-8.25 2.16,-12.72c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM67.2,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM124.8,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM72,103.8c7.5,0.69 14.28,3.975 19.2,9c-0.405,0.6 -0.825,1.17 -1.2,1.8c-7.26,-1.395 -13.59,-5.31 -18,-10.8zM119.76,103.8c0.075,-0.015 0.165,0 0.24,0c-4.41,5.49 -10.74,9.405 -18,10.8c-0.375,-0.63 -0.795,-1.2 -1.2,-1.8c4.875,-4.98 11.55,-8.265 18.96,-9zM61.68,104.52c-4.08,4.74 -9.525,8.31 -15.84,9.84c4.08,-4.74 9.525,-8.31 15.84,-9.84zM130.32,104.52c6.315,1.53 11.76,5.1 15.84,9.84c-6.315,-1.53 -11.76,-5.1 -15.84,-9.84zM67.2,109.8c5.055,5.76 11.76,9.96 19.44,11.88c-1.395,3.99 -2.16,8.25 -2.16,12.72c0,8.025 2.52,15.45 6.72,21.6c-5.55,5.67 -13.38,9.12 -22.08,9.12c-17.145,0 -30.72,-13.575 -30.72,-30.72c0,-4.155 0.825,-8.055 2.28,-11.64c10.605,-0.615 19.95,-5.49 26.52,-12.96zM124.8,109.8c6.57,7.47 15.915,12.345 26.52,12.96c1.455,3.585 2.28,7.485 2.28,11.64c0,17.145 -13.575,30.72 -30.72,30.72c-8.7,0 -16.53,-3.45 -22.08,-9.12c4.2,-6.15 6.72,-13.575 6.72,-21.6c0,-4.47 -0.765,-8.73 -2.16,-12.72c7.68,-1.92 14.385,-6.12 19.44,-11.88zM94.44,122.76c0.525,0.015 1.035,0.12 1.56,0.12c0.525,0 1.035,-0.105 1.56,-0.12c1.455,3.585 2.28,7.485 2.28,11.64c0,5.46 -1.41,10.59 -3.84,15c-2.43,-4.41 -3.84,-9.54 -3.84,-15c0,-4.155 0.825,-8.055 2.28,-11.64z"></path></g></g></g></svg>
-                          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s" style="font-size:56px;"><strong>UIC OLYMPIC GAMES</strong></h1> 
-                      </div>
-                  </div>
-              </div>
-              
-              <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;margin-left: 91px;margin-right: 91px;">
-                  <div class="row">
-      
-
-                    <!-- Grid column -->
-                    <div class="col-lg-9" style="padding-top: 35px;">
-                    
-                        <!-- Category -->
-                        <a href="uic-olympic.html">
-                          <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;">Schedule</h6>
-                        </a>
-                        <!-- Post title -->
-                        <h3 class="font-weight-bold mb-3" style="font-size:20px;"><strong>UIC OLYMPIC GAMES</strong></h3>
-                        <!-- Excerpt -->
-                        <p style="font-size:15px;">Nam libero tempore, cum soluta nobis est eligendi optio cumque. </p>
-                        <!-- Post data -->
-                      </div>
-                      <!-- Grid column -->
-                          <!-- Grid column -->
-                          <div class="col-lg-1 text-center" style="
-    padding-top: 30px;
-    border: 1px solid #666666;
-">
-                            <a class="programbtn" href="programme.html" style="
-    /* padding: 20px; */
-    /* border: 1px solid #666666; */
-"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#666666"><g id="surface1"><path d="M46.08,0c-4.2,0 -7.68,3.48 -7.68,7.68v7.68h-23.04c-2.01,0 -4.05,0.735 -5.49,2.19c-1.455,1.44 -2.19,3.48 -2.19,5.49v153.6c0,2.01 0.735,4.05 2.19,5.505c1.44,1.44 3.48,2.175 5.49,2.175h161.28c2.01,0 4.05,-0.735 5.505,-2.175c1.44,-1.455 2.175,-3.495 2.175,-5.505v-153.6c0,-2.01 -0.735,-4.05 -2.175,-5.49c-1.455,-1.455 -3.495,-2.19 -5.505,-2.19h-23.04v-7.68c0,-4.2 -3.48,-7.68 -7.68,-7.68h-7.68c-4.2,0 -7.68,3.48 -7.68,7.68v7.68h-69.12v-7.68c0,-4.2 -3.48,-7.68 -7.68,-7.68zM46.08,7.68h7.68v23.04h-7.68zM138.24,7.68h7.68v23.04h-7.68zM15.36,23.04h23.04v7.68c0,4.2 3.48,7.68 7.68,7.68h7.68c4.2,0 7.68,-3.48 7.68,-7.68v-7.68h69.12v7.68c0,4.2 3.48,7.68 7.68,7.68h7.68c4.2,0 7.68,-3.48 7.68,-7.68v-7.68h23.04v26.88h-161.28zM15.36,57.6h161.28v119.04h-161.28zM38.4,72.96v88.32h115.2v-88.32zM46.08,80.64h19.2v19.2h-19.2zM72.96,80.64h19.2v19.2h-19.2zM99.84,80.64h19.2v19.2h-19.2zM126.72,80.64h19.2v19.2h-19.2zM46.08,107.52h19.2v19.2h-19.2zM72.96,107.52h19.2v19.2h-19.2zM99.84,107.52h19.2v19.2h-19.2zM126.72,107.52h19.2v19.2h-19.2zM46.08,134.4h19.2v19.2h-19.2zM72.96,134.4h19.2v19.2h-19.2zM99.84,134.4h19.2v19.2h-19.2zM126.72,134.4h19.2v19.2h-19.2z"></path></g></g></g></svg>
-                              <br><span style="color:#666666;"><em>full schedule</em></span></a>
-                          </div>
-                    
-                          
-                          <!-- Grid column -->
-                    
-                          
-                    
-                  </div>
-                  <div style="height:2cm;"></div>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-3"></div>
-                      <div class="col-md-6">
-                        <ul class="nav nav-tabs nav-justified md-tabs" id="myTab" role="tablist" style="border:none;">
-                          <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                              aria-selected="true">
-                              <h3>27 April</h3>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                              aria-selected="false">
-                              <h3>28 April</h3>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                              aria-selected="false">
-                              <h3>29 April</h3>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-md-3"></div>
-                    </div>
-                  </div>
-                  <div style="height:2cm;"></div>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                      <ul class="featuresbuttons justify-content-center">
-                        <li class="featurebtn">
-                          <button type="button" onclick="javascript:location.href='about.html'" class="btn btn-outline colored-feature-btn waves-effect">Tennis</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Basketball</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Pocker</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Volleyball</button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <ul class="featuresbuttons justify-content-center">
-                        <li class="featurebtn">
-                          <button type="button" onclick="javascript:location.href='about.html'" class="btn btn-outline colored-feature-btn waves-effect">Ping-pong</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Billard</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Fléchettes</button>
-                        </li>
-                        <li class="featurebtn">
-                          <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Echecs</button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <ul class="featuresbuttons justify-content-center">
-                            <li class="featurebtn">
-                              <button type="button" onclick="javascript:location.href='about.html'" class="btn btn-outline colored-feature-btn waves-effect">Culture générale</button>
-                            </li>
-                            <li class="featurebtn">
-                              <button type="button" class="btn btn-outline colored-feature-btn waves-effect">Street Basketball</button>
-                            </li>
-                            <li class="featurebtn">
-                              <button type="button" class="btn btn-outline colored-feature-btn waves-effect">100m</button>
-                            </li>
-                            <li class="featurebtn">
-                              <button type="button" class="btn btn-outline colored-feature-btn waves-effect">800m</button>
-                            </li>
-                          </ul>
-                    </div>
-                  </div>
             </div>
-              
-              <div class="bgimg-1">
-                <div class="caption" style="    top: 30% !important;                ">
-                  <div class="col-md-12 mb-4 white-text text-center">
-                    <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong style="
-                      font-size: 56px;
-                  ">#UIC-OLYMPIC</strong></h1>
-                          
-                        </div>                </div>
-                        
-                </div>
-              
-              
-              <div class="container mt-5 mb-4 text-center text-md-left" style="
-              ">
-                                                <div class="row mt-3">
-                                    
-                                                    <!--First column-->
-                                                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                                                        <h6 class="text-uppercase font-weight-bold"><strong style="
-                  color: black;
-                  font-size: 20px;
-              ">UIC OLYMPIC GAMES</strong></h6>
-                                                        <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;/* color: black !important; */color: #0076b3 !important;/* font-size: 18px; */">
-                                                        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-                                                            adipisicing elit.</p>
-                                                    </div>
-                                                    <!--/.First column-->
-                                    
-                                                    <!--Second column-->
-                                                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                                        <h6 class="text-uppercase font-weight-bold"><strong style="
-                  color: black !important;
-                  font-size: 20px;
-              ">Products</strong></h6>
-                                                        <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;/* color: black !important; */">
-                                                        <p style="
-    font-size: 18px;
-"><a href="index.hml" style="
-                  /* color: black; */
-                  color: #0076b3 !important;
-              ">Home</a></p>
-                                                        <p><a href="uic-olympic.html" style="
-                  /* color: white; */
-                  color: #0076b3 !important;
-                  font-size: 18px;
-              ">About</a></p>
-                                                        <p style="
-                  color: white;
-              "><a href="ecoles.html" style="
-                  color: white;
-                  color: #0076b3 !important;
-                  color: #0076b3 !important;
-                  font-size: 18px;
-              ">Participants</a></p>
-                                                        
-                                                    </div>
-                                                    <!--/.Second column-->
-                                    
-                                                    <!--Third column-->
-                                                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                                        <h6 class="text-uppercase font-weight-bold"><strong style="
-                  color: black !important;
-                  font-size: 20px;
-              ">Useful links</strong></h6>
-                                                        <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                                                        <p><a href="program.html" style="
-                  color: white;
-                  color: #0076b3 !important;
-                  font-size: 18px;
-              ">Schedule</a></p>
-                                                        <p><a href="conact.html" style="
-                  color: white;
-                  color: #0076b3 !important;
-                  font-size: 18px;
-              ">Contact</a></p>
-                                                        <p><a href="http://www.uic.ac.ma/" style="
-                  color: white;
-                  color: #0076b3 !important;
-                  font-size: 18px;
-              ">UIC</a></p>
-                                                        
-                                                    </div>
-                                                    <!--/.Third column-->
-                                    
-                                                    <!--Fourth column-->
-                                                    <div class="col-md-4 col-lg-3 col-xl-3">
-                                                        <h6 class="text-uppercase font-weight-bold" style="
-                  color: black !important;
-                  font-size: 20px;
-              "><strong>Contact</strong></h6>
-                                                        <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                                                        
-                                                        <p style="
-    /* font-size: 18px; */
-    color: #0076b3 !important;
-    font-size: 18px;
-">+212 522 36 76 88</p>
-                                                        <p style="
-    color: #0076b3 !important;
-    font-size: 18px;
-">Email : contact@uic.ac.ma</p>
-                                                        
-                                                    </div>
-                                                    <!--/.Fourth column-->
-                                    
-                                                </div>
-                                                <p>CAMPUS DE L'UNIVERSITÉ INTERNATIONALE DE CASABLANCA CASA GREEN TOWN - ROUTE PROVINCIALE 3020, CASABLANCA BP 50169 CASA GHANDI</p>
-              </div>
-    <div class="footer-copyright text-center py-3" style="background-color: #0076b3;">
-        <p style="font-size: 18px;color:white;">UIC</p> 
+            <!--/.Form-->
+          </div>
+          <!--/Grid column-->
+          </div>
+          <!--/Grid row-->
+        </div>
+      </div>
+  </div>
+  <!--/bgimg-1-->
+
+  <!--Content1-->
+  <div class="content1" >
+    <div class="row">
+    <!-- Grid column -->
+      <div class="col-lg-6" style="padding-top: 35px;">
+        <!-- Category -->
+        <a href="uic-olympic.html">
+          <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;">About Us</h6>
+        </a>
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3" style="font-size:20px;">
+          <strong>UIC OLYMPIC GAMES</strong>
+        </h3>
+        <!-- Excerpt -->
+        <p style="font-size:15px;">
+          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+          placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
+        </p>
+        <!-- Post data -->
+        <a class="btn  btn-md waves-effect waves-light" href="uic-olympic.html" style="margin-left: 0 !important;font-size:13px;background-color: #0076b3!important;">
+          Lire La Suite
+        </a>
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-6 text-center d-flex justify-content-center" id="countdown" style="    background: url(./images/logo.png);
+      background-size: cover;">
+      </div>
+      <!-- Grid column -->
+     </div>
+  </div>
+  <!--/Content1-->
+  
+  <!--bgimg-2-->
+  <div class="bgimg-2">
+    <div class="caption" style="    top: 10% !important;                ">
+      <div class="col-md-12 mb-4 white-text text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150" viewBox="0 0 192 192" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M38.4,46.08c-21.255,0 -38.4,17.145 -38.4,38.4c0,19.29 14.13,35.16 32.64,37.92c-1.245,3.78 -1.92,7.785 -1.92,12c0,21.255 17.145,38.4 38.4,38.4c10.5,0 19.95,-4.245 26.88,-11.04c6.93,6.795 16.38,11.04 26.88,11.04c21.255,0 38.4,-17.145 38.4,-38.4c0,-4.215 -0.675,-8.22 -1.92,-12c18.51,-2.76 32.64,-18.63 32.64,-37.92c0,-21.255 -17.145,-38.4 -38.4,-38.4c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08zM38.4,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.47 0.765,8.73 2.16,12.72c-10.155,2.535 -18.63,9.06 -23.76,17.88c-15.975,-1.215 -28.32,-14.28 -28.32,-30.6c0,-17.145 13.575,-30.72 30.72,-30.72zM96,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.215 0.675,8.22 1.92,12c-8.205,1.23 -15.48,5.025 -21.12,10.56c-5.64,-5.535 -12.915,-9.33 -21.12,-10.56c1.245,-3.78 1.92,-7.785 1.92,-12c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM153.6,53.76c17.145,0 30.72,13.575 30.72,30.72c0,16.32 -12.345,29.385 -28.32,30.6c-5.13,-8.82 -13.605,-15.345 -23.76,-17.88c1.395,-3.99 2.16,-8.25 2.16,-12.72c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM67.2,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM124.8,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM72,103.8c7.5,0.69 14.28,3.975 19.2,9c-0.405,0.6 -0.825,1.17 -1.2,1.8c-7.26,-1.395 -13.59,-5.31 -18,-10.8zM119.76,103.8c0.075,-0.015 0.165,0 0.24,0c-4.41,5.49 -10.74,9.405 -18,10.8c-0.375,-0.63 -0.795,-1.2 -1.2,-1.8c4.875,-4.98 11.55,-8.265 18.96,-9zM61.68,104.52c-4.08,4.74 -9.525,8.31 -15.84,9.84c4.08,-4.74 9.525,-8.31 15.84,-9.84zM130.32,104.52c6.315,1.53 11.76,5.1 15.84,9.84c-6.315,-1.53 -11.76,-5.1 -15.84,-9.84zM67.2,109.8c5.055,5.76 11.76,9.96 19.44,11.88c-1.395,3.99 -2.16,8.25 -2.16,12.72c0,8.025 2.52,15.45 6.72,21.6c-5.55,5.67 -13.38,9.12 -22.08,9.12c-17.145,0 -30.72,-13.575 -30.72,-30.72c0,-4.155 0.825,-8.055 2.28,-11.64c10.605,-0.615 19.95,-5.49 26.52,-12.96zM124.8,109.8c6.57,7.47 15.915,12.345 26.52,12.96c1.455,3.585 2.28,7.485 2.28,11.64c0,17.145 -13.575,30.72 -30.72,30.72c-8.7,0 -16.53,-3.45 -22.08,-9.12c4.2,-6.15 6.72,-13.575 6.72,-21.6c0,-4.47 -0.765,-8.73 -2.16,-12.72c7.68,-1.92 14.385,-6.12 19.44,-11.88zM94.44,122.76c0.525,0.015 1.035,0.12 1.56,0.12c0.525,0 1.035,-0.105 1.56,-0.12c1.455,3.585 2.28,7.485 2.28,11.64c0,5.46 -1.41,10.59 -3.84,15c-2.43,-4.41 -3.84,-9.54 -3.84,-15c0,-4.155 0.825,-8.055 2.28,-11.64z"></path></g></g></g></svg>
+          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s" style="font-size:56px;"><strong>UIC OLYMPIC GAMES</strong></h1> 
+      </div>
     </div>
-
-              <style>
-                  .card {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    border: 0;
-    font-weight: 400;
-}
-.z-depth-1-half {
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
-}
-.card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-.text-center {
-    text-align: center!important;
-}
-.view {
-    position: relative;
-    overflow: hidden;
-    cursor: default;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-.card {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-    border: 0;
-    font-weight: 400;
-}
-.card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-.zoom img, .zoom video {
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
-}
-
-.view img, .view video {
-    position: relative;
-    display: block;
-}
-.img-fluid, .modal-dialog.cascading-modal.modal-avatar .modal-header, .video-fluid {
-    max-width: 100%;
-    height: auto;
-}
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-.collection-card .stripe.light {
-    background-color: rgba(255,255,255,.7);
-}
-
-.collection-card .stripe {
-    position: absolute;
-    bottom: 3rem;
-    width: 100%;
-    text-align: center;
-    padding: 1.2rem;
-}
-.collection-card .stripe.light a p {
-    color: #424242;
-}
-
-.collection-card .stripe a p {
-    padding: 0;
-    margin: 0;
-    letter-spacing: .25rem;
-}
-
-
-              </style>
-
-          <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-          <!-- Bootstrap tooltips -->
-          <script type="text/javascript" src="js/popper.min.js"></script>
-          <!-- Bootstrap core JavaScript -->
-          <script type="text/javascript" src="js/bootstrap.min.js"></script>
-          <!-- MDB core JavaScript -->
-          <script type="text/javascript" src="js/mdb.min.js"></script><div class="hiddendiv common"></div><div class="hiddendiv common"></div><div class="hiddendiv common"></div><div class="hiddendiv common"></div><div class="hiddendiv common"></div>
-        
-        
-        <script>
+  </div>
+  <!--/bgimg-2-->
+  
+  <!--Content2-->
+  <div class="content1" style="margin-top:15px !important;margin-bottom:15px !important;">
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-6">
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4" style="padding-left: 90px;padding-right: 90px;padding-bottom: 0px;">
+          <img class="img-fluid" src="./images/logo.png" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight waves-effect waves-light" style="padding-left: 20px;padding-right: 20px;padding-top: 50px;padding-bottom: 50px;"></div>
+          </a>
+        </div>
+      </div>
+      <!-- /Grid column -->
+      <!-- Grid column -->
+      <div class="col-lg-6" style="padding-top: 65px;">
+        <!-- Category -->
+        <a href="ecoles.html" class="green-text">
+          <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;"> Partcipants </h6>
+        </a>
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3" style="font-size:20px;"><strong>UIC OLYMPIC GAMES</strong></h3>
+        <!-- Excerpt -->
+        <p style="font-size:15px;">
+          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+          placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.
+        </p>
+        <!-- Post data -->
+        <a class="btn  btn-md waves-effect waves-light" href="uic-olympic.html" style="margin-left: 0 !important;font-size:13px;background-color: #0076b3!important;">Lire La Suite</a>
+      </div>
+      <!-- Grid column -->
+    </div>
+  </div>
+  <!--/Content2-->
+  
+  <!--bgimg-3-->
+  <div class="bgimg-3">
+    <div class="caption" style="    top: 10% !important;                ">
+      <div class="col-md-12 mb-4 white-text text-center">
+         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150" height="150"viewBox="0 0 192 192"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#ffffff"><g id="surface1"><path d="M38.4,46.08c-21.255,0 -38.4,17.145 -38.4,38.4c0,19.29 14.13,35.16 32.64,37.92c-1.245,3.78 -1.92,7.785 -1.92,12c0,21.255 17.145,38.4 38.4,38.4c10.5,0 19.95,-4.245 26.88,-11.04c6.93,6.795 16.38,11.04 26.88,11.04c21.255,0 38.4,-17.145 38.4,-38.4c0,-4.215 -0.675,-8.22 -1.92,-12c18.51,-2.76 32.64,-18.63 32.64,-37.92c0,-21.255 -17.145,-38.4 -38.4,-38.4c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08c-11.52,0 -21.765,5.07 -28.8,13.08c-7.035,-8.01 -17.28,-13.08 -28.8,-13.08zM38.4,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.47 0.765,8.73 2.16,12.72c-10.155,2.535 -18.63,9.06 -23.76,17.88c-15.975,-1.215 -28.32,-14.28 -28.32,-30.6c0,-17.145 13.575,-30.72 30.72,-30.72zM96,53.76c9.93,0 18.645,4.605 24.24,11.76c-3.165,5.58 -5.04,12.06 -5.04,18.96c0,4.215 0.675,8.22 1.92,12c-8.205,1.23 -15.48,5.025 -21.12,10.56c-5.64,-5.535 -12.915,-9.33 -21.12,-10.56c1.245,-3.78 1.92,-7.785 1.92,-12c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM153.6,53.76c17.145,0 30.72,13.575 30.72,30.72c0,16.32 -12.345,29.385 -28.32,30.6c-5.13,-8.82 -13.605,-15.345 -23.76,-17.88c1.395,-3.99 2.16,-8.25 2.16,-12.72c0,-6.9 -1.875,-13.38 -5.04,-18.96c5.595,-7.155 14.31,-11.76 24.24,-11.76zM67.2,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM124.8,73.68c1.23,3.36 1.92,6.975 1.92,10.8c0,3.825 -0.69,7.44 -1.92,10.8c-1.23,-3.36 -1.92,-6.975 -1.92,-10.8c0,-3.825 0.69,-7.44 1.92,-10.8zM72,103.8c7.5,0.69 14.28,3.975 19.2,9c-0.405,0.6 -0.825,1.17 -1.2,1.8c-7.26,-1.395 -13.59,-5.31 -18,-10.8zM119.76,103.8c0.075,-0.015 0.165,0 0.24,0c-4.41,5.49 -10.74,9.405 -18,10.8c-0.375,-0.63 -0.795,-1.2 -1.2,-1.8c4.875,-4.98 11.55,-8.265 18.96,-9zM61.68,104.52c-4.08,4.74 -9.525,8.31 -15.84,9.84c4.08,-4.74 9.525,-8.31 15.84,-9.84zM130.32,104.52c6.315,1.53 11.76,5.1 15.84,9.84c-6.315,-1.53 -11.76,-5.1 -15.84,-9.84zM67.2,109.8c5.055,5.76 11.76,9.96 19.44,11.88c-1.395,3.99 -2.16,8.25 -2.16,12.72c0,8.025 2.52,15.45 6.72,21.6c-5.55,5.67 -13.38,9.12 -22.08,9.12c-17.145,0 -30.72,-13.575 -30.72,-30.72c0,-4.155 0.825,-8.055 2.28,-11.64c10.605,-0.615 19.95,-5.49 26.52,-12.96zM124.8,109.8c6.57,7.47 15.915,12.345 26.52,12.96c1.455,3.585 2.28,7.485 2.28,11.64c0,17.145 -13.575,30.72 -30.72,30.72c-8.7,0 -16.53,-3.45 -22.08,-9.12c4.2,-6.15 6.72,-13.575 6.72,-21.6c0,-4.47 -0.765,-8.73 -2.16,-12.72c7.68,-1.92 14.385,-6.12 19.44,-11.88zM94.44,122.76c0.525,0.015 1.035,0.12 1.56,0.12c0.525,0 1.035,-0.105 1.56,-0.12c1.455,3.585 2.28,7.485 2.28,11.64c0,5.46 -1.41,10.59 -3.84,15c-2.43,-4.41 -3.84,-9.54 -3.84,-15c0,-4.155 0.825,-8.055 2.28,-11.64z"></path></g></g></g></svg>
+         <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s" style="font-size:56px;"><strong>UIC OLYMPIC GAMES</strong></h1> 
+      </div>
+    </div>
+  </div>
+  <!--/bgimg-3--> 
+  
+  <!--Content3-->
+  <div class="content1" style="margin-top:15px !important;margin-bottom:15px !important;">
+    <div class="row">
+    <!-- Grid column -->
+      <div class="col-lg-9" style="padding-top: 35px;">
+        <a href="uic-olympic.html">
+          <h6 class="font-weight-bold mb-3" style="color: #0076b3!important;font-size: 15px;">Schedule</h6>
+        </a>
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3" style="font-size:20px;"><strong>UIC OLYMPIC GAMES</strong></h3>
+        <!-- Excerpt -->
+        <p style="font-size:15px;">Nam libero tempore, cum soluta nobis est eligendi optio cumque. </p>
+        <!-- Post data -->
+      </div>
+     <!-- Grid column -->
+      <!-- Grid column -->
+     <div class="col-lg-1 text-center" style="padding-top: 30px;border: 1px solid #BE476D;">
+      <a class="programbtn" href="programme.html" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 192 192" style=" fill:#BE476D;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g fill="#666666"><g id="surface1"><path style="fill:#BE476D;" d="M46.08,0c-4.2,0 -7.68,3.48 -7.68,7.68v7.68h-23.04c-2.01,0 -4.05,0.735 -5.49,2.19c-1.455,1.44 -2.19,3.48 -2.19,5.49v153.6c0,2.01 0.735,4.05 2.19,5.505c1.44,1.44 3.48,2.175 5.49,2.175h161.28c2.01,0 4.05,-0.735 5.505,-2.175c1.44,-1.455 2.175,-3.495 2.175,-5.505v-153.6c0,-2.01 -0.735,-4.05 -2.175,-5.49c-1.455,-1.455 -3.495,-2.19 -5.505,-2.19h-23.04v-7.68c0,-4.2 -3.48,-7.68 -7.68,-7.68h-7.68c-4.2,0 -7.68,3.48 -7.68,7.68v7.68h-69.12v-7.68c0,-4.2 -3.48,-7.68 -7.68,-7.68zM46.08,7.68h7.68v23.04h-7.68zM138.24,7.68h7.68v23.04h-7.68zM15.36,23.04h23.04v7.68c0,4.2 3.48,7.68 7.68,7.68h7.68c4.2,0 7.68,-3.48 7.68,-7.68v-7.68h69.12v7.68c0,4.2 3.48,7.68 7.68,7.68h7.68c4.2,0 7.68,-3.48 7.68,-7.68v-7.68h23.04v26.88h-161.28zM15.36,57.6h161.28v119.04h-161.28zM38.4,72.96v88.32h115.2v-88.32zM46.08,80.64h19.2v19.2h-19.2zM72.96,80.64h19.2v19.2h-19.2zM99.84,80.64h19.2v19.2h-19.2zM126.72,80.64h19.2v19.2h-19.2zM46.08,107.52h19.2v19.2h-19.2zM72.96,107.52h19.2v19.2h-19.2zM99.84,107.52h19.2v19.2h-19.2zM126.72,107.52h19.2v19.2h-19.2zM46.08,134.4h19.2v19.2h-19.2zM72.96,134.4h19.2v19.2h-19.2zM99.84,134.4h19.2v19.2h-19.2zM126.72,134.4h19.2v19.2h-19.2z"></path></g></g></g></svg>
+        <br>
+        <span style="color:#BE476D;">
+          <em>full schedule</em>
+        </span>
+      </a>
+     </div>
+     <!-- Grid column -->
+     </div>
+     <div style="height:2cm;"></div>
+      <div class="container">
+        <div class="row">
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+            <ul class="nav nav-tabs nav-justified md-tabs" id="myTab" role="tablist" style="border:none;">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"aria-selected="true">
+                  <h3>27 April</h3>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"aria-selected="false">
+                   <h3>28 April</h3>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                  <h3>29 April</h3>
+                </a>
+              </li>
+            </ul>
+           </div>
+           <div class="col-md-3"></div>
+        </div>
+      </div>
+     <div style="height:2cm;"></div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <ul class="featuresbuttons justify-content-center">
+                        <li class="featurebtn">
+                          <p class="featurecard">Tennis</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Basketball</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Pocker</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Volleyball</p>
+                        </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+          <ul class="featuresbuttons justify-content-center">
+                        <li class="featurebtn">
+                          <p class="featurecard">Ping-pong</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Billard</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Fléchettes</p>
+                        </li>
+                        <li class="featurebtn">
+                          <p class="featurecard">Echecs</p>
+                        </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <ul class="featuresbuttons justify-content-center">
+                            <li class="featurebtn">
+                                <p class="featurecard">Culture générale</p>
+                            </li>
+                            <li class="featurebtn">
+                                <p class="featurecard">Street Basketball</p>
+                            </li>
+                            <li class="featurebtn">
+                                <p class="featurecard">100m</p>
+                            </li>
+                            <li class="featurebtn">
+                                <p class="featurecard">800m</p>
+                            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <!--/Content3-->          
+  
+  <!--bgimg-1-->
+  <div class="bgimg-1">
+    <div class="caption" style="top: 30% !important;">
+      <div class="col-md-12 mb-4 white-text text-center">
+        <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong style="font-size: 56px;">#UIC-OLYMPIC</strong></h1>
+      </div>
+    </div>
+  </div>
+  <!--/bgimg-1-->           
+              
+  <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+    <!--First column-->
+    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+      <h6 class="text-uppercase font-weight-bold"><strong style="color: black;font-size: 20px;">UIC OLYMPIC GAMES</strong></h6>
+      <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;/* color: black !important; */color: #0076b3 !important;/* font-size: 18px; */">
+      <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit.</p>
+    </div>
+    <!--/.First column-->
+    <!--Second column-->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <h6 class="text-uppercase font-weight-bold"><strong style="color: black !important;font-size: 20px;">Products</strong></h6>
+      <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;/* color: black !important; */">
+      <p style="font-size: 18px;"><a href="index.hml" style="color: #0076b3 !important;">Home</a></p>
+      <p><a href="uic-olympic.html" style="color: #0076b3 !important;font-size: 18px;">About</a></p>
+      <p style="color: white;"><a href="ecoles.html" style="color: #0076b3 !important;font-size: 18px;">Participants</a></p>                                      
+    </div>
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <h6 class="text-uppercase font-weight-bold"><strong style="color: black !important;font-size: 20px;">Useful links</strong></h6>
+      <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p><a href="program.html" style="color: white;color: #0076b3 !important;font-size: 18px;">Schedule</a></p>
+      <p><a href="conact.html" style="color: white;color: #0076b3 !important;font-size: 18px;">Contact</a></p>
+      <p><a href="http://www.uic.ac.ma/" style="color: white;color: #0076b3 !important;font-size: 18px;">UIC</a></p>                                          
+    </div>
+    <div class="col-md-4 col-lg-3 col-xl-3">
+      <h6 class="text-uppercase font-weight-bold" style="color: black !important;font-size: 20px;">
+        <strong>Contact</strong>
+      </h6>
+     <hr class="black mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">      
+     <p style="color: #0076b3 !important;font-size: 18px;">+212 522 36 76 88</p>
+     <p style="color: #0076b3 !important;font-size: 18px;">Email : contact@uic.ac.ma</p>                                    
+    </div>                     
+    </div>
+    <p>CAMPUS DE L'UNIVERSITÉ INTERNATIONALE DE CASABLANCA CASA GREEN TOWN - ROUTE PROVINCIALE 3020, CASABLANCA BP 50169 CASA GHANDI</p>
+  </div>
+  <div class="footer-copyright text-center py-3" style="background-color: #0076b3;">
+             <p style="font-size: 18px;color:white;">UIC</p> 
+  </div>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <div class="hiddendiv common"></div>
+  <div class="hiddendiv common"></div>
+  <div class="hiddendiv common"></div>
+  <div class="hiddendiv common"></div>
+  <div class="hiddendiv common"></div>        
+  <script>
           // set the date we're counting down to
           var countDownDate = new Date("April 8, 2019 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+          // Update the count down every 1 second
+          var x = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
+          // Get todays date and time
+          var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+           // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-     countdown.innerHTML = '<div class="container " style="background-image:url(./images/logo.png);background-size:cover;">'
-                                    +'<div class="row " style="background: linear-gradient(135deg,rgba(246,115,13,0.7) 0%,rgba(217,8,69,0.7) 80%);">'
-                                     +' <div class="col-12" style="color:white;font-size:60px;padding:20px;">' + days + '<span>  Days Left</span>' +'</div>'+
+          countdown.innerHTML = '<div class="container " style="background: linear-gradient(135deg,rgba(246,115,13,0.7) 0%,rgba(217,8,69,0.7) 80%);">'
+                                    +'<div class="row " >'
+                                     +' <div class="col-12 article__titlebig" style="color:white;">' + days + '<span>  Days Left</span>' +'</div>'+
                                     '</div>'+
-                                    '<div class="row" style="background: linear-gradient(135deg,rgba(246,115,13,0.7) 0%,rgba(217,8,69,0.7) 80%);">'+'<div class="col-6 col-sm-4" style="padding:20px;"><span style="font-size:40px;color:white;">'+hours+'</span><br><span style="font-size:20px;color:white;"> Hours</span></div>'
-                                      +'<div class="col-6 col-sm-4" style="padding:20px;">'+'<span style="color:white;font-size:40px;">'+minutes+'</span><br><span style="font-size:20px;color:white;">'+' Minutes</span></div>'
-                                      +'<div class="col-6 col-sm-4" style="padding:20px;"><span style="color:white;font-size:40px;">'+seconds+'</span><br><span style="font-size:20px;color:white;">'+' Seconds</span></div>'+
+                                    '<div class="row" >'+'<div class="col-md-4 article__titlesmall" style="padding:20px;"><span style="color:white;">'+hours+'</span><br><span style="color:white;"> Hours</span></div>'
+                                      +'<div class="col-md-4 article__titlesmall">'+'<span style="color:white;">'+minutes+'</span><br><span style="color:white;">'+' Minutes</span></div>'
+                                      +'<div class="col-md-4 article__titlesmall"><span style="color:white;">'+seconds+'</span><br><span style="color:white;">'+' Seconds</span></div>'+
                                     '</div>'+'</div>';
                                     
                                     
                                    
                                     if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-   </script>    
-           <script>
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+          }, 1000);
+  </script>    
+  <script>
               $(document).ready(function(){
               $(window).scroll(function(){
                 var scroll = $(window).scrollTop();
@@ -664,11 +390,7 @@ var x = setInterval(function() {
                 }
               })
             })
-            </script>
-
-
-
-
+  </script>
 </body>
 
 </html>

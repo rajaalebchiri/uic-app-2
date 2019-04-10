@@ -40,22 +40,11 @@ body{
     border-top:10px solid white;
   }
 
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
-      background:#F1F0F6;
-  }
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-      border:none !important;
-      background: #0076B3;
-      color: white !important; 
-      font-size: 28px;
-      font-weight: 700;
-  } 
+
    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  > h3{
-color: white;
+color: #0076B3;
 }
-.nav-item{
-    padding:15px !important;
-}
+
 .featuresbuttons{
     display: flex;
     list-style: none;
@@ -68,3 +57,176 @@ color: white;
     border-radius: 4px;
     padding: 15px 40px;
 }
+.featurecard{
+    color: #0076B3;
+    border: 2px solid #0076B3;
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-left: 1rem;
+}
+.article__titlebig{
+    font-size: 56px;
+  }
+  .article__titlesmall{
+    font-size: 30px;
+    padding: 20px;
+  }
+  .content1{
+      color:#777;
+      background-color:white;
+      text-align:center;
+      padding:50px 80px;
+      text-align: justify;
+      margin-left: 91px;
+      margin-right: 91px;
+    }
+
+
+  @media (max-width: 575px) { 
+    .article__titlebig {
+        font-size: calc(16px + (24-16) * (100vw - 50px) / (600 - 50));
+      }
+      .article__titlesmall{
+          font-size:  calc(10px + (17-10) * (100vw - 50px) / (600 - 50));
+          padding:20px;
+        }
+        .featuresbuttons{
+          display: flex;
+          list-style: none;
+          flex-direction: column;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      #countdown{
+            margin-top: 15px !important;
+    margin-bottom: 15px !important;
+      }
+      .content1{
+          color:#777;
+          background-color:white;
+          text-align:center;
+          padding:0px 0px;
+          text-align: justify;
+          margin-left: 0px;
+          margin-right: 0px;}
+          .caption{
+            top: 8% !important;
+          }
+          .triangle{
+            font-size:36px;
+            font-weight:700;
+            color:white;
+          }
+    }
+
+ 
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+    .article__titlebig {
+        font-size: calc(16px + (24-16) * (100vw - 50px) / (600 - 50));
+      }
+      .article__titlesmall{
+          font-size:  calc(10px + (17-10) * (100vw - 50px) / (600 - 50));
+          padding:0px;
+
+        }
+        .featuresbuttons{
+          display: flex;
+          list-style: none;
+          flex-direction: column;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      .content1{
+          color:#777;
+          background-color:white;
+          text-align:center;
+          padding:0px 0px;
+          text-align: justify;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+        #countdown{
+            margin-left: 91px;
+            margin-right: 91px;
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+        }
+        .caption{
+          top: 8% !important;
+        }
+        .triangle{
+          font-size:36px;
+          font-weight:700;
+          color:white;
+        }
+    }
+ 
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .article__titlebig {
+        font-size: 46px;
+      }
+      .article__titlesmall{
+          font-size: 26px;
+          padding:20px;
+        }
+        .caption{
+          top: 8% !important;
+        }
+        .triangle{
+          font-size:46px;
+          font-weight:700;
+          color:white;
+        }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+   .article__titlebig {
+    font-size: 56px;
+  }
+  .article__titlesmall{
+      font-size: 30px;
+      padding:20px;
+
+    } 
+    .caption{
+      top: 10% !important;
+    }
+    .triangle{
+      font-size:66px;
+      font-weight:700;
+      color:white;
+    }
+  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  
+  .article__titlebig {
+    font-size: 56px;
+  }
+  .article__titlesmall{
+      font-size: 30px;
+      padding:20px;
+    }
+    .caption{
+      top: 10% !important; 
+    }
+    .triangle{
+      font-size:66px;
+      font-weight:700;
+      color:white;
+    }
+   }

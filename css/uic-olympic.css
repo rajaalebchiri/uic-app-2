@@ -1,0 +1,124 @@
+.hrintro{
+    width: 100px;
+    height: 50px;
+    border-top: 5px solid #C63D44;
+}
+.row{
+    margin-right: 15px !important;
+    margin-top: 100px;
+    margin-left: 40px !important;
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("./images/mkj.png");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("./images/athletes-ball-basketball-945471.jpg");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+      background-image: url('https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+      min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+  body > div.card.card-cascade.wider.reverse > div.view.view-cascade.overlay > div > div > h2{
+    margin-top: -1.5rem !important;
+}
+body > div.card.card-cascade.wider.reverse > div.card-body.card-body-cascade.text-center > div.jumbotron.text-center.hoverable.p-4 > div > div.col-md-7.text-md-left.ml-3.mt-3 > h4{
+  font-size: 36px;
+line-height: 36px;
+letter-spacing: -1px;
+color: #000000;
+margin-bottom: 21px;
+}
+body > div.card.card-cascade.wider.reverse > div.card-body.card-body-cascade.text-center > div.jumbotron.text-center.hoverable.p-4 > div > div.col-md-7.text-md-left.ml-3.mt-3 > p{
+  font-size: 22px;
+}
+body > div.card.card-cascade.wider.reverse > div.card-body.card-body-cascade.text-center > div.jumbotron.text-center.hoverable.p-4 > div > div.col-md-7.text-md-left.ml-3.mt-3 > a{
+    font-size: 18px;
+    background-color: #0076b3;
+}
+
+@media (max-width: 575px) { 
+  .navbar-brand > img{
+      margin-left: 0px !important;
+      }
+ }
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-brand > img{
+    margin-left: 0px !important;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
