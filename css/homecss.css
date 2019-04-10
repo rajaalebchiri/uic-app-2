@@ -92,6 +92,10 @@ color: #0076B3;
 
 
   @media (max-width: 575px) { 
+    .bgimg-1 {
+      background-image: url("../images/back22.png");
+      min-height: 1000px;
+    }
     .article__titlebig {
         font-size: calc(16px + (24-16) * (100vw - 50px) / (600 - 50));
       }
@@ -132,6 +136,10 @@ color: #0076B3;
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) { 
+  .bgimg-1 {
+    background-image: url("../images/back22.png");
+    min-height: 1000px;
+  }
     .article__titlebig {
         font-size: calc(16px + (24-16) * (100vw - 50px) / (600 - 50));
       }
@@ -175,6 +183,10 @@ color: #0076B3;
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .bgimg-1 {
+    background-image: url("../images/back22.png");
+    min-height: 100%;
+  }
     .article__titlebig {
         font-size: 46px;
       }
@@ -194,6 +206,10 @@ color: #0076B3;
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) { 
+  .bgimg-1 {
+    background-image: url("../images/back22.png");
+    min-height: 100%;
+  }
    .article__titlebig {
     font-size: 56px;
   }
@@ -213,7 +229,11 @@ color: #0076B3;
   }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) { 
+  .bgimg-1 {
+    background-image: url("../images/back22.png");
+    min-height: 100%;
+  } 
   .article__titlebig {
     font-size: 56px;
   }
